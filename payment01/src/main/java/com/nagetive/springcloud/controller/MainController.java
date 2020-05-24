@@ -28,6 +28,7 @@ public class MainController {
 
 	@GetMapping("/get/{id}")
 	public StandardResults<Payment> getPaymentByID(@PathVariable("id") int id){
+    System.out.println("a");
 		Payment payment = ps.getPaymentByID(id);
 		if (payment != null){
 			return new StandardResults(200,"success",payment);
