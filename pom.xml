@@ -13,6 +13,7 @@
   <modules>
     <module>payment01</module>
     <module>Costomer80</module>
+      <module>Commons</module>
   </modules>
 
   <name>Maven</name>

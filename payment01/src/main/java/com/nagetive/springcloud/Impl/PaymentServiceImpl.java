@@ -1,7 +1,7 @@
 package com.nagetive.springcloud.Impl;
 
+import com.nagetive.springcloud.CommonEntites.Payment;
 import com.nagetive.springcloud.dao.PaymentOperation;
-import com.nagetive.springcloud.entites.Payment;
 import com.nagetive.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 

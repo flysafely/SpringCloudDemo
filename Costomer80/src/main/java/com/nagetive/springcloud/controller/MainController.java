@@ -1,7 +1,7 @@
 package com.nagetive.springcloud.controller;
 
-import com.nagetive.springcloud.entites.Payment;
-import com.nagetive.springcloud.entites.StandardResults;
+import com.nagetive.springcloud.CommonEntites.Payment;
+import com.nagetive.springcloud.CommonEntites.StandardResults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

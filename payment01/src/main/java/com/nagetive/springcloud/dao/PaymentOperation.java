@@ -1,6 +1,6 @@
 package com.nagetive.springcloud.dao;
 
-import com.nagetive.springcloud.entites.Payment;
+import com.nagetive.springcloud.CommonEntites.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

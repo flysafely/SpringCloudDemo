@@ -1,4 +1,4 @@
-package com.nagetive.springcloud.entites;
+package com.nagetive.springcloud.CommonEntites;
 
 import lombok.Data;
 import lombok.Getter;

@@ -5,7 +5,7 @@
     <insert id="createPayment" useGeneratedKeys="true" keyProperty="id">
         insert into paymentlist (username,price) values(#{username},#{price})
     </insert>
-    <resultMap id="paymentResult" type="com.nagetive.springcloud.entites.Payment">
+    <resultMap id="paymentResult" type="com.nagetive.springcloud.CommonEntites.Payment">
         <id column="id" property="id"></id>
         <result column="username" property="username" javaType="string" jdbcType="VARCHAR"></result>
         <result column="price" property="price"></result>

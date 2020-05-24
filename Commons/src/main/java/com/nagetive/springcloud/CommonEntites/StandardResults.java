@@ -1,8 +1,9 @@
-package com.nagetive.springcloud.entites;
+package com.nagetive.springcloud.CommonEntites;
 
-import lombok.*;
-
-import java.util.Map;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Data
 @Setter

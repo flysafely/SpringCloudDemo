@@ -1,6 +1,7 @@
 package com.nagetive.springcloud.service;
 
-import com.nagetive.springcloud.entites.Payment;
+
+import com.nagetive.springcloud.CommonEntites.Payment;
 
 public interface PaymentService {
 	public int createPayment(Payment payment);
