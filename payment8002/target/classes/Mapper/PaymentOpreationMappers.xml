@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nagetive.springcloud.dao.PaymentOperation">
+    <insert id="createPayment" useGeneratedKeys="true" keyProperty="id">
+        insert into paymentlist (username,price) values(#{username},#{price})
+    </insert>
+    <resultMap id="paymentResult" type="com.nagetive.springcloud.CommonEntites.Payment">
+        <id column="id" property="id"></id>
+        <result column="username" property="username" javaType="string" jdbcType="VARCHAR"></result>
+        <result column="price" property="price"></result>
+    </resultMap>
+    <select id="getPaymentByID" resultMap="paymentResult">
+        select * from paymentlist where id = #{id}
+    </select>
+</mapper>
