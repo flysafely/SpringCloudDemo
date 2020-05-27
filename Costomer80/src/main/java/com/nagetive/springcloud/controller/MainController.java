@@ -13,10 +13,19 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class MainController {
-	public static final String PAYMENT_URL = "http://localhost:8001";
-
-	@Resource
-	private RestTemplate rt;
+	/**
+	 * 单机版 可以根据一个地址找到相应的服务
+	 */
+//	public static final String PAYMENT_URL = "http://localhost:8001";
+  /**
+   * 集群版 需要修改为 在eureka中注册的微服务名称，也就是微服务yml文件中
+	 * spring:
+	 * 	application:
+	 * 		# 会显示在eureka注册服务器列表中的名称
+	 * 		name: cloud-payment-service
+   */
+	public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+  @Resource private RestTemplate rt;
 
 	@GetMapping("/consumer/payment/create")
 	public StandardResults createPayment(Payment payment){

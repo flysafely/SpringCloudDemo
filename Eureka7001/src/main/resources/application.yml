@@ -1,0 +1,13 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: eureka7001.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      # eureka 7001 服务端 向 eureka 7002 服务端注册
+      # eureka7002.com 在hosts文件中已经指向127.0.0.1
+      defaultZone: http://eureka7002.com:7002/eureka/
