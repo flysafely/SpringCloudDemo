@@ -44,7 +44,7 @@
     <mybatis.version>2.1.2</mybatis.version>
     <junit.version>4.13</junit.version>
     <log4j.version>2.13.2</log4j.version>
-    <mysql.version>8.0.20</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
     <druid.version>1.1.22</druid.version>
     <lombok.version>1.18.12</lombok.version>
     <eureka.client.version>2.2.2.RELEASE</eureka.client.version>
